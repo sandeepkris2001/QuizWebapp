@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+   <link rel="shortcut icon" href="quiz.ico">
+</head>
+<body>
+    <div class="paragraph">
+        <div class="para-inner">
+            <div class="para-border">
+                <h2><u>Marie Curie</u></h2>
+                <a href="comprehension.pdf" download="comprehension.pdf" target="__blank" id="comp1"><i class="bi bi-download"></i> Download</a>
+            
+                <br>
+                <br>
+                    <h4><u>Read the Passage carefully and answers the following Questions:-</u></h4>
+                    <br>
+                <p>Curie was one of the most accomplished scientists in history. Together with her husband,
+                    Pierre, she discovered radium, an element widely used for treating cancer, and studied uranium 
+                    and other radioactive substances. Pierre and Marie's amicable collaboration later helped to
+                    unlock the secrets of the atom.</p>
+                    <p>Marie was born in 1867 in Warsaw, Poland, where her father was a professor of physics. At the
+                    early age, she displayed a brilliant mind and a blithe personality. Her great exuberance for
+                    learning prompted her to continue with her studies after high school. She became disgruntled,
+                    however, when she learned that the university in Warsaw was closed to women. Determined to
+                    receive a higher education, she defiantly left Poland and in 1891 entered the Sorbonne, a French
+                    university, where she earned her master's degree and doctorate in physics.</p>
+                <p>Marie was fortunate to have studied at the Sorbonne with some of the greatest scientists of her
+                    day, one of whom was Pierre Curie. Marie and Pierre were married in 1895 and spent many
+                    productive years working together in the physics laboratory. A short time after they discovered
+                    radium, Pierre was killed by a horse-drawn wagon in 1906. Marie was stunned by this horrible
+                    misfortune and endured heartbreaking anguish. Despondently she recalled their close
+                    relationship and the joy that they had shared in scientific research. The fact that she had two
+                    young daughters to raise by herself greatly increased her distress.</p>
+                <p>Curie's feeling of desolation finally began to fade when she was asked to succeed her husband as
+                    a physics professor at the Sorbonne. She was the first woman to be given a professorship at the
+                    world-famous university. In 1911 she received the Nobel Prize in chemistry for isolating radium.
+                    Although Marie Curie eventually suffered a fatal illness from her long exposure to radium, she
+                    never became disillusioned about her work. Regardless of the consequences, she had dedicated
+                    herself to science and to revealing the mysteries of the physical world.</p>
+                </div>
+            </div>
+        </div>
+        <div class="quiz">
+            <!-- start -->
+            <div class="start_btn"><button>Attempt Quiz Now</button>
+            </div>
+            <!-- Information-->
+            <div class="rules">
+                <div class="info_box">
+                    <div class="info-title"><span>Rules and Regulations</span></div>
+                    <div class="info-list">
+                        <div class="info">1. The quizzes are all in English.</div>
+                        <div class="info">2. Anyone suspected by an official of cheating will be disqualified.</div>
+                        <div class="info">3. Time limit of this quiz is 6mins. If time exists quiz will be autosubmitted.</div>
+                        <div class="info">4. After clicking the Submit button, Scores will be displayed.</div>
+                        <div class="info">5. Read the passage carefully and answer the questions.</div>
+
+                    </div>
+                    <div class="buttons">
+                        <button class="quit">Exit Quiz</button>
+                        <button class="restart">Continue</button>
+                    </div>
+                </div>
+        </div>
+
+        <!-- Quiz -->
+        <div class="quiz_box">
+            <header>
+                <div class="title">Quiz</div>
+                <div class="timer">
+                    <div class="time_left_txt">Time Left</div>
+                    <div class="timer_sec">20</div>
+                </div>
+                <div class="time_line"></div>
+            </header>
+
+            <section>
+                <div class="que_text"></div>
+                <div class="option_list"></div>
+            </section>
+
+            <footer>
+                <div class="total_que"></div>
+                <button class="next_btn">Next</button>
+
+            </footer>
+        </div>
+        <!--score-->
+        <div class="result_box">
+            <div class="complete_text">You have succesfully completed the Quiz!</div>
+            <div class="score_text"></div>
+            <div class="buttons">
+                <button class="restart">Re-attempt Quiz</button>
+                <a href="comprehension.pdf" download="comprehension.pdf" target="__blank" id="review"> Review<a>
+                <button class="quit">Quit Quiz</button>
+            </div>
+        </div>
+        <br>
+        </div>
+    
+    <script src="QuizQuestions.js"></script>
+    <script src="App.js"></script>
+
+</body>
+</html>
