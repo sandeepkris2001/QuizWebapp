@@ -14,7 +14,6 @@ body{
     height: 100%;
     width: 50%;
     position: fixed;
-    overflow-x: hidden;
     
   }
   .paragraph {
@@ -25,13 +24,7 @@ body{
     right: 0;
     background-color: rgb(248, 240, 240);
   }
-.paragraph{
-    border: 1px solid white;
-    border-radius: 2px;
-    background-color: white;
-    width: 50%;
-    font-size:large;
-}
+
 .paragraph h2{
 
     text-align: center;
@@ -39,17 +32,17 @@ body{
 .para-border{
     border: 5px solid black;
     padding: 3%;
+    padding-bottom: 50%;
 }
-.para-inner{
-    
-    padding: 3% 3% 3% 3%;
-}
+
+
 .para-inner  #comp1{
     text-decoration: none;
     float: right;
-
+    position: absolute;
+    left: 60%;
     color: white;
-    margin-top: -5%;
+    
     padding: 0.8%;
     border: 1px solid rgb(221, 2, 250);
     background:rgb(221, 2, 250);
@@ -316,20 +309,6 @@ footer button.prev_btn{
 
 }
 
-footer button.submit_btn{
-    height: 40px;
-    padding: 0 40px;
-    font-size: 18px;
-    font-weight: 400;
-    cursor: pointer;
-    border: none;
-    outline: none;
-    color: #fff;
-    border-radius: 5px;
-    background: rgb(221, 2, 250);
-    border: 1px solid rgb(221, 2, 250);
-    line-height: 10px;
-}
 
 footer button.next_btn{
     height: 40px;
