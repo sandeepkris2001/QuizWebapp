@@ -300,10 +300,9 @@ footer .total_que span p{
 footer .total_que span p:first-child{
     padding-left: 0px;
 }
-
-footer button{
+footer button.prev_btn{
     height: 40px;
-    padding: 0 13px;
+    padding: 0 20px;
     font-size: 18px;
     font-weight: 400;
     cursor: pointer;
@@ -314,14 +313,37 @@ footer button{
     background: rgb(221, 2, 250);
     border: 1px solid rgb(221, 2, 250);
     line-height: 10px;
-    opacity: 0;
-    pointer-events: none;
+
 }
 
+footer button.submit_btn{
+    height: 40px;
+    padding: 0 40px;
+    font-size: 18px;
+    font-weight: 400;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    color: #fff;
+    border-radius: 5px;
+    background: rgb(221, 2, 250);
+    border: 1px solid rgb(221, 2, 250);
+    line-height: 10px;
+}
 
-footer button.show{
-    opacity: 1;
-    pointer-events: auto;
+footer button.next_btn{
+    height: 40px;
+    padding: 0 60px;
+    font-size: 18px;
+    font-weight: 400;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    color: #fff;
+    border-radius: 5px;
+    background: rgb(221, 2, 250);
+    border: 1px solid rgb(221, 2, 250);
+    line-height: 10px;
 }
 .result_box .icon{
     font-size: 100px;
