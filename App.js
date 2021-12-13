@@ -7,6 +7,7 @@ const result_box = document.querySelector(".result_box");
 const option_list = document.querySelector(".option_list");
 const viewScore = document.querySelector(".score");
 const prev_btn = document.querySelector(".prev_btn");
+const visibe = document.querySelector(".visible");
 
 start_btn.onclick = ()=>{
     info_box.classList.add("activeInfo"); 
@@ -67,8 +68,9 @@ next_btn.onclick = ()=>{
          showQuestions(que_count); 
         queCounter(que_numb); 
         clearInterval(counter); 
-       
-        
+        if(que_numb==6){
+            next_btn.innerHTML = "Finish Attempt"
+        }
     }else{
         clearInterval(counter); 
         clearInterval(counterLine);
@@ -91,9 +93,6 @@ prev_btn.onclick = ()=>{
         clearInterval(counterLine); 
         
     }
-}
-document.querySelector(".submit_btn").onclick = ()=>{
-    showResult();
 }
 
 function  showQuestions(index){
